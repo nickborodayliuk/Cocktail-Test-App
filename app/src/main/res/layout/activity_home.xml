@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:label=""
+    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="18dp"
+
+        app:cardBackgroundColor="#009688"
+        app:cardCornerRadius="27dp">
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/search" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/history_is_empty"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginLeft="141dp"
+        android:layout_marginTop="334dp"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="10sp"
+        android:text="History is empty"
+        android:textColor="#727272"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
